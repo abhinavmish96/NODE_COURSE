@@ -29,3 +29,10 @@ Node.js also provides a rich library of various JavaScript modules which simplif
 ### Reading a File Asynchronously
 
 - A new module, **File System (fs)**, The File System module wraps standard POSIX file functionality, including opening up and accessing the contents from a file.
+
+### Benefits of Node
+
+- Node isn’t all asynchronous function calls. Some objects may provide both synchronous and asynchronous versions of the same function. However, Node works best when you use asynchronous coding as much as possible.
+- The Node event loop and callback functions have two major benefits.
+- First, the application can easily scale, since a single thread of execution doesn’t have an enormous amount of overhead. If you ran the PHP application in Apache with the default prefork MPM, each time the application was requested, it would have to be handled in a separate child process. Chances are, unless you have a significantly loaded system, you’ll only be able to run—at most—a couple of hundred child processes in parallel. More than that number of requests means that a client needs to wait for a response.
+- A second benefit to Node is that you minimize resource usage, but without having to resort to multithreaded development. In other words, you don’t have to create a thread- safe application. If you’ve ever developed a thread-safe application previously, you’re probably feeling profoundly glad at this statement.
