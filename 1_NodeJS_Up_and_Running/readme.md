@@ -28,4 +28,4 @@ Node.js also provides a rich library of various JavaScript modules which simplif
 
 ### Reading a File Asynchronously
 
-- A new module, **File System (fs)**, is used in this example. The File System module wraps standard POSIX file functionality, including opening up and accessing the contents from a file.
+- A new module, **File System (fs)**, The File System module wraps standard POSIX file functionality, including opening up and accessing the contents from a file.
