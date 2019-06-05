@@ -1,10 +1,10 @@
 var http = require('http');
 var fs = require('fs');
-
+var counter = 0;
 // write out numbers
 function writeNumbers(res){
     
-    var counter = 0;
+    //var counter = 0;
 
     //increment global write to client
     for(var i = 0; i<100; i++){
