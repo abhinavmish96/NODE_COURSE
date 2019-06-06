@@ -16,3 +16,12 @@
 -  From incorporating external modules to gracefully handling multiline expressions, providing a textual indicator of code that’s nested following an opening curly brace **{}**.
 - REPL provides repeating dots to indicate that everything that’s being typed follows an open curly brace and hence the command isn’t finished yet. It does the same for an open parenthesis.
 - Increasing levels of nesting generates more dots; this is necessary in an interactive en- vironment, where you might lose track of where you are, as you type.
+- You can type in, or copy and paste in, an entire Node application and run it from REPL.
+- |Keyboard entry|What it does|
+  |:------|:------------------------|
+  |Ctrl-C|Terminates current command. Pressing Ctrl-C twice forces an exit.|
+  |Ctrl-D|Exits REPL.|
+  |Tab|Autocompletes global or local variable.|
+  |Up arrow|Traverses up through command history.|
+  |Down arrow|Traverses down through command history.|
+  |Underscore(_)|References result of last expression.|
