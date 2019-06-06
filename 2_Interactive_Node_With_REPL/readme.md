@@ -25,3 +25,9 @@
   |Up arrow|Traverses up through command history.|
   |Down arrow|Traverses down through command history.|
   |Underscore(_)|References result of last expression.|
+
+
+### REPL and rlwrap
+
+- [The Node.js website documentation for REPL](https://nodejs.org/api/repl.html)
+- The rlwrap utility is a wrapper that adds GNU readline library functionality to command lines that allow increased flexibility with keyboard input. It intercepts keyboard input and provides additional functionality, such as enhanced line editing, as well as a persistent history of commands.
