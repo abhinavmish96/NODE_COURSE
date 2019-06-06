@@ -10,3 +10,9 @@
 - To begin REPL, simply type node without providing any Node application file, like so: 
 **$ node**
 - REPL then provides a command-line prompt—an angle bracket (>)—by default. Any- thing you type from this point on is processed by the underlying V8 JavaScript engine.
+
+### Multiline and More Complex JavaScript
+
+-  From incorporating external modules to gracefully handling multiline expressions, providing a textual indicator of code that’s nested following an opening curly brace **{}**.
+- REPL provides repeating dots to indicate that everything that’s being typed follows an open curly brace and hence the command isn’t finished yet. It does the same for an open parenthesis.
+- Increasing levels of nesting generates more dots; this is necessary in an interactive en- vironment, where you might lose track of where you are, as you type.
