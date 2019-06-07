@@ -30,4 +30,8 @@
 
 ### The Timers: setTimeout, clearTimeout, setInterval, and clearInterval
 
-- 
+- The timer functions in client-side JavaScript are part of the global windows object. They’re not part of JavaScript, but have become such a ubiquitous part of JavaScript development that the Node developers incorporated them into the Node core API.
+- The timer functions operate in Node just like they operate in the browser. In fact, they operate in Node exactly the same as they would in Chrome, since Node is based on Chrome’s V8 JavaScript engine.
+- The Node **setTimeout** function takes a callback function as first parameter, the delay time (in milliseconds) as second parameter, and an optional list of arguments.
+- The function **clearTimeout** clears a preset **setTimeout**. If you need to have a repeating timer, you can use **setInterval** to call a function every n milliseconds—n being the second parameter passed to the function. Clear the interval with **clearInterval**.
+
