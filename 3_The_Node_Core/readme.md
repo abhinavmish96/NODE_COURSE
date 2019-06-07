@@ -35,3 +35,11 @@
 - The Node **setTimeout** function takes a callback function as first parameter, the delay time (in milliseconds) as second parameter, and an optional list of arguments.
 - The function **clearTimeout** clears a preset **setTimeout**. If you need to have a repeating timer, you can use **setInterval** to call a function every n milliseconds—n being the second parameter passed to the function. Clear the interval with **clearInterval**.
 
+### Servers, Streams and Sockets
+
+- A **socket** is an endpoint in a communication, and a network socket is an endpoint in a communication between applications running on two different computers on the network.
+- The data flows between the sockets in what’s known as a **stream**.
+- The data in the stream can be transmitted as binary data in a buffer, or in Unicode as a string. Both types of data are transmitted as *packets*: parts of the data split off into specifically sized pieces. 
+- There is a special kind of packet, a finish packet (FIN), that is sent by a socket to signal that the transmission is done. How the communication is managed, and how reliable the stream is, depends on the type of socket created.
+- #### TCP Sockets and Servers
+    - We can create a basic *TCP server* and client with the *Node Net module*. TCP forms the basis for most Internet applications, such as web service and email. It provides a way of reliably transmitting data between client and server sockets.
