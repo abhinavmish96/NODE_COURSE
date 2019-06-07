@@ -43,3 +43,4 @@
 - There is a special kind of packet, a finish packet (FIN), that is sent by a socket to signal that the transmission is done. How the communication is managed, and how reliable the stream is, depends on the type of socket created.
 - #### TCP Sockets and Servers
     - We can create a basic *TCP server* and client with the *Node Net module*. TCP forms the basis for most Internet applications, such as web service and email. It provides a way of reliably transmitting data between client and server sockets.
+    - *Callback function* is attached to the two events via the **on method**. Many objects in Node that emit events provide a way to attach a function as an event listener by using the on method. This method takes the name of the *event as first parameter*, and *the function listener as the second*.
