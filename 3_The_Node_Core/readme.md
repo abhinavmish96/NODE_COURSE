@@ -15,4 +15,8 @@
 ### Globals: global, process, and Buffer
 
 - There are several objects available to all Node applications without the user having to incorporate any module. The Node.js website groups these items under the descriptive label of globals.
-- 
+- #### Global :
+    - *global* is the global namespace object. In some ways, it’s similar to windows in a browser environment, in that it provides access to global properties and methods and doesn’t have to be explicitly referenced by name.
+    - *global* is like the windows object in a browser, but there are key differences—and not just the methods and properties available. The windows object in a browser is truly global in nature. If you define a global variable in client-side JavaScript, it’s accessible by the web page and by every single library. However, if you create a variable at the top-level scope in a Node module (a variable outside a function), it only becomes global to the module, not to all of the modules.
+- #### process
+    - 
