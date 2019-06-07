@@ -19,4 +19,9 @@
     - *global* is the global namespace object. In some ways, it’s similar to windows in a browser environment, in that it provides access to global properties and methods and doesn’t have to be explicitly referenced by name.
     - *global* is like the windows object in a browser, but there are key differences—and not just the methods and properties available. The windows object in a browser is truly global in nature. If you define a global variable in client-side JavaScript, it’s accessible by the web page and by every single library. However, if you create a variable at the top-level scope in a Node module (a variable outside a function), it only becomes global to the module, not to all of the modules.
 - #### process
-    - 
+    - Each Node application is an instance of a Node process object, and as such, comes with certain built-in functionality.
+    - Many of the process object’s methods and properties provide identification or information about the application and its environment. The **process.execPath** method re- turns the execution path for the Node application; **process.version** provides the Node version; and **process.platform** identifies the server platform
+    - The process object also wraps the STDIO streams *stdin*, *stdout*, and *stderr*. Both *stdin* and *stdout* are **asynchronous**, and are *readable* and *writable*, respectively. *stderr*, however, is a **synchronous, blocking stream**.
+    - Use **process.nextTick** if you wanted to delay a function for some reason, but you wanted to delay it asynchronously.
+- #### buffer
+    -
