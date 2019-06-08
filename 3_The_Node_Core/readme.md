@@ -44,3 +44,7 @@
 - #### TCP Sockets and Servers
     - We can create a basic *TCP server* and client with the *Node Net module*. TCP forms the basis for most Internet applications, such as web service and email. It provides a way of reliably transmitting data between client and server sockets.
     - *Callback function* is attached to the two events via the **on method**. Many objects in Node that emit events provide a way to attach a function as an event listener by using the on method. This method takes the name of the *event as first parameter*, and *the function listener as the second*.
+- #### HTTP
+    - We can create **http servers** using the *createServer* method, passing in the function that will act as the *requestListener*. Requests are processed as they come, asynchronously.
+    - In a network, TCP is the transportation layer and HTTP is the application layer. If you scratch around in the modules included with Node, you’ll see that when you create an HTTP server, you’re inheriting functionality from the TCP-based net.Server.
+    - 
