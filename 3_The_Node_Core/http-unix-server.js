@@ -1,5 +1,4 @@
-// create server
-// and callback function 
+// create server and callback function 
 var http = require('http'); 
 var fs = require('fs');
 

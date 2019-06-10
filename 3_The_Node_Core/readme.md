@@ -48,4 +48,10 @@
     - We can create **http servers** using the *createServer* method, passing in the function that will act as the *requestListener*. Requests are processed as they come, asynchronously.
     - In a network, TCP is the transportation layer and HTTP is the application layer. If you scratch around in the modules included with Node, you’ll see that when you create an HTTP server, you’re inheriting functionality from the TCP-based net.Server.
     - For the *HTTP server*, the *requestListener* is a socket, while the *http.ServerRequest* object is a readable stream and the *http.ServerResponse* is a writable stream.
+- #### UDP/Datagram Socket
+    - *TCP* requires a dedicated connection between the two endpoints of the communication. *UDP* is a *connectionless protocol*, which means there’s no guarantee of a connection between the two endpoints. For this reason, *UDP is less reliable and robust than TCP*. 
+    - On the other hand, *UDP* is generally *faster* than *TCP*, which makes it more popular for real-time uses, as well as technologies such as VoIP (Voice over Internet Protocol), where the TCP connection requirements could adversely impact the quality of the signal.
+    - The UDP module identifier is dgram: 
+        **require ('dgram');**
+    - To create a *UDP socket*, use the *createSocket* method, passing in the type of socket— either *udp4* or *udp6*. You can also pass in a callback function to listen for events. Unlike messages sent with TCP, messages sent using UDP must be sent as buffers, not strings.
     - 
