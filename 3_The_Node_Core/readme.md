@@ -47,4 +47,5 @@
 - #### HTTP
     - We can create **http servers** using the *createServer* method, passing in the function that will act as the *requestListener*. Requests are processed as they come, asynchronously.
     - In a network, TCP is the transportation layer and HTTP is the application layer. If you scratch around in the modules included with Node, you’ll see that when you create an HTTP server, you’re inheriting functionality from the TCP-based net.Server.
+    - For the *HTTP server*, the *requestListener* is a socket, while the *http.ServerRequest* object is a readable stream and the *http.ServerResponse* is a writable stream.
     - 
