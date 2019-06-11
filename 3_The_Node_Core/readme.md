@@ -59,4 +59,6 @@
 
 ### Child Processes
 
+- *Operating systems* provide access to a great deal of functionality, but much of it is only accessible via the *command line*. It would be nice to be able to access this functionality from a Node application. That’s where *child processes* come in.
+- Node enables us to run a system command within a new child process, and listen in on its input/output. This includes being able to pass arguments to the command, and even pipe the results of one command to another.
 - 
