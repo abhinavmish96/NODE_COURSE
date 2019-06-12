@@ -61,4 +61,12 @@
 
 - *Operating systems* provide access to a great deal of functionality, but much of it is only accessible via the *command line*. It would be nice to be able to access this functionality from a Node application. That’s where *child processes* come in.
 - Node enables us to run a system command within a new child process, and listen in on its input/output. This includes being able to pass arguments to the command, and even pipe the results of one command to another.
-- 
+- #### child_process.spawn
+    - There are four different techniques you can use to create a child process. The most common one is using the *spawn method*.
+- #### child_process.exec and child_process.execFile
+    - In addition to spawning a child process, you can also use **child_process.exec** and **child_process.execFile** to run a command in a shell and buffer the results. 
+    - The only difference between *child_process.exec* and *child_process.execFile* is that execFile runs an application in a file, rather than running a command.
+    - The first parameter in the two methods is either the command or the file and its location; the second parameter is options for the command; and the third is a callback function.
+    - The callback function takes three arguments: *error*, *stdout*, and *stderr*. The data is buffered to *stdout* if no error occurs.
+- #### child_process.fork
+    - 
