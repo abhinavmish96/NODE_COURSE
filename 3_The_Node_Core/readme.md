@@ -69,4 +69,10 @@
     - The first parameter in the two methods is either the command or the file and its location; the second parameter is options for the command; and the third is a callback function.
     - The callback function takes three arguments: *error*, *stdout*, and *stderr*. The data is buffered to *stdout* if no error occurs.
 - #### child_process.fork
-    - 
+    - The *child_process.fork* process apart from the others is that there’s an actual communication channel established to the child process. Note, though, that each pro- cess requires a whole new instance of V8, which takes both time and memory.
+
+### Domain Resolution and URL Processing
+
+- The DNS module provides DNS resolution using c-ares, a C library that provides asyn- chronous DNS requests. It’s used by Node with some of its other modules, and can be useful for applications that need to discover domains or IP addresses.
+- To discover the *IP address* given a *domain*, use the **dns.lookup** method and print out the returned IP address.
+- The **dns.reverse** method returns an array of domain names for a given IP address.
