@@ -76,3 +76,10 @@
 - The DNS module provides DNS resolution using c-ares, a C library that provides asyn- chronous DNS requests. It’s used by Node with some of its other modules, and can be useful for applications that need to discover domains or IP addresses.
 - To discover the *IP address* given a *domain*, use the **dns.lookup** method and print out the returned IP address.
 - The **dns.reverse** method returns an array of domain names for a given IP address.
+
+### Events and EventEmitter
+
+- The **EventEmitter** object is what provides the asynchronous event handling to objects in Node.
+- *EventEmitter* instance does two essential tasks: attach an event handler to an event, and emit the actual event. 
+- The **on** event handler is triggered when a specific event is emitted. The first parameter to the method is the name of the event, the second a function to process the event.
+- The event is emitted on the object, based on some criteria, via the *emit* method.
