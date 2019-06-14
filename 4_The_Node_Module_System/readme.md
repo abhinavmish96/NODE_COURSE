@@ -30,4 +30,13 @@ Among the CommonJS module system requirements implemented with Node are:
 
 ### External Modules and the Node Package Manager
 
+- Much of the rich functionality associated with Node comes in via third-party modules. There are router modules, modules for working with relational or document database systems, template modules, testing modules, and even modules for payment gateways.
+- Though there is no formal Node module developer system, developers are encouraged to upload their modules to GitHub. Following are good resources for finding Node modules:
+    - [npm registry](http://search.npmjs.org/)
+    - [Node module wiki](https://github.com/joyent/node/wiki/modules)
+    - The [node-toolbox](http://toolbox.no.de/)
+    - [Nipster!](http://eirikb.github.com/nipster/)
+
+### Finding Modules
+
 - 
