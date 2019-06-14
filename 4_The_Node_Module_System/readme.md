@@ -16,4 +16,8 @@ Among the CommonJS module system requirements implemented with Node are:
 
 ### Loading a Module with require and Default Paths
 
+- Node supports a simple module loading system: there is a one-to-one correspondence between the file and module.To include a module within a Node application, use the **require** statement, passing in a *string* with the **identifier for the module**.
+**var http = require ('http');**
+- You can also just include a specific object, rather than all objects, from a module:
+**var spawn = require('child_process').spawn;**
 - 
