@@ -39,4 +39,5 @@ Among the CommonJS module system requirements implemented with Node are:
 
 ### Finding Modules
 
-- 
+- The Node documentation site does provide a listing of recommended third-party modules, starting with the npm, which is now incorporated into the Node installation. However, the npm website and its module registry provide us with a better view of what modules are used in most applications.
+
