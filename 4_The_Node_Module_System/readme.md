@@ -41,3 +41,15 @@ Among the CommonJS module system requirements implemented with Node are:
 
 - The Node documentation site does provide a listing of recommended third-party modules, starting with the npm, which is now incorporated into the Node installation. However, the npm website and its module registry provide us with a better view of what modules are used in most applications.
 
+### Creating Your Own Custom Module
+
+- Use the exports object to export the function.
+- Treat the library as a single imported object, assigned to a variable, in order to
+access the functions.
+- #### Packaging an Entire Directory
+    - You can split your module into separate JavaScript files, all located within a directory. Node can load the directory contents,as long as you organize the contents in one of two ways.
+    - The first way is to provide a JSON file named package.json with information about the directory. The structure can contain other information, but the only entries relevant to Node are:
+    **{ "name" : "mylibrary",<br>"main" : "./mymodule/mylibrary.js" }**
+    - The second way is to include either an index.js or index.node file in the directory to serve as the main module entry point.
+- #### Preparing Your Module for Publication
+    - If you want to make your package available to others, you can promote it on your website, but you’ll be missing out on a significant audience. When you’re ready to publish a module,you’re going to want to add it to the list of modules at the Node.js website, and you’ll also want to publish it to the npm registry.
