@@ -44,4 +44,3 @@ And since asynchronous control can add some new and interesting twists when it c
     A continuation function with arguments already applied combined with other control flow functions.
     - **nextTick**
     Calls the callback in the next loop of an event loop—based on process.nextTick in Node.
-- 
