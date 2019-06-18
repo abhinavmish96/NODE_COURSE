@@ -23,4 +23,25 @@ And since asynchronous control can add some new and interesting twists when it c
 
 ### Asynchronous Patterns and Control Flow Modules
 
+- One Node module, Async, provides names and support for the most extensive list of asynchronous control flow patterns:
+    - **waterfall**
+    Functions are called in turn, and results of all are passed as an array to the last callback (also called series and sequence by others).
+    - **series**
+    Functions are called in turn and, optionally, results are passed as an array to the last callback.
+    - **parallel**
+    Functions are run in parallel and when completed, results are passed to the last callback (though the result array isn’t part of the pattern in some interpretations of the parallel pattern).
+    - **whilst**
+    Repeatedly calls one function, invoking the last callback only if a preliminary test returns false or an error occurs.
+    - **queue**
+    Calls functions in parallel up to a given limit of concurrency, and new functions are queued until one of the functions finishes.
+    - **until**
+    Repeatedly calls one function, invoking the last callback only if a post-process test returns false or an error occurs.
+    - **auto**
+    Functions are called based on requirements, each function receiving the results of previous callbacks.
+    - **iterator**
+    Each function calls the next, with the ability to individually access the next iterator.
+    - **apply**
+    A continuation function with arguments already applied combined with other control flow functions.
+    - **nextTick**
+    Calls the callback in the next loop of an event loop—based on process.nextTick in Node.
 - 
