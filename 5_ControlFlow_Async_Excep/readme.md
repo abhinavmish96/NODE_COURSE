@@ -19,4 +19,8 @@ And since asynchronous control can add some new and interesting twists when it c
 
 - The functions are called, in turn, passing the results from the earlier function to each subsequent function. Since all the functions are synchronous, we don’t have to worry about the function calls getting out of sequence—no unexpected results. Thus performing **sequential functionality**.
 - Converting this synchronous sequential application pattern to an asynchronous im- plementation requires a couple of modifications. First, we have to replace all functions with their asynchronous counterparts. However, we also have to account for the fact that each function doesn’t block when called, which means we can’t guarantee the proper sequence if the functions are called independently of each other. The only way to ensure that each function is called in its proper sequence is to use **nested callbacks**.
+
+
+### Asynchronous Patterns and Control Flow Modules
+
 - 
