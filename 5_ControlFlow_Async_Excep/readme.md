@@ -48,4 +48,5 @@ And since asynchronous control can add some new and interesting twists when it c
     - Step is a focused utility module that enables simplified control flow for serial and par- allel execution. It can be installed using npm as follows:<br>
         **npm install step**
     - The Step module exports exactly one object. To use the object for serial execution, wrap your asynchronous function calls within functions that are then passed as pa- rameters to the object.
-    
+- #### Async
+    - The Async module provides functionality for managing collections, such as its own variation of forEach, map, and filter. It also provides some utility functions, including ones for memoization. 
