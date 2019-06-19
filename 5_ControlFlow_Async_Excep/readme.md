@@ -44,3 +44,8 @@ And since asynchronous control can add some new and interesting twists when it c
     A continuation function with arguments already applied combined with other control flow functions.
     - **nextTick**
     Calls the callback in the next loop of an event loop—based on process.nextTick in Node.
+- #### Step
+    - Step is a focused utility module that enables simplified control flow for serial and par- allel execution. It can be installed using npm as follows:<br>
+        **npm install step**
+    - The Step module exports exactly one object. To use the object for serial execution, wrap your asynchronous function calls within functions that are then passed as pa- rameters to the object.
+    
