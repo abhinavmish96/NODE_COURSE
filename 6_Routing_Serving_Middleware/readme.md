@@ -39,4 +39,6 @@ This chapter focuses on the technology available to Node developers for providin
 
 ### Proxies
 
-- 
+- A proxy is a way of routing requests from several different sources through one server for whatever reason: caching, security, even obscuring the originator of the request.
+-  As an example, publicly accessible proxies have been used to restrict some people’s access to certain web content by making it seem that a request originates from someplace other than its actual origin. This type of proxy is also called a forward proxy.
+- A reverse proxy is a way of controlling how requests are sent to a server. As an example, you may have five servers, but you don’t want people directly accessing four of them. Instead, you direct all traffic through the fifth server, which proxies the requests to the other servers. Reverse proxies can also be used for load balancing, and to improve the overall performance of a system by caching requests as they are made.
