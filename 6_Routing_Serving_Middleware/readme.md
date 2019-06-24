@@ -32,3 +32,11 @@ This chapter focuses on the technology available to Node developers for providin
         npm install connect</pre>
     - Connect is, in actuality, a framework in which you can use one or more middleware applications.
 
+### Routers
+
+- Routers accept something from one source and forward it to another. Typically what’s forwarded is a data packet, but at the application level, it can also be a resource request.
+- In Node, the primary use for a router is to extract the information we need from a URI —usually using some pattern—and to use that information to trigger the right process, passing the extracted information to the process.
+
+### Proxies
+
+- 
