@@ -23,9 +23,9 @@ This chapter focuses on the technology available to Node developers for providin
 
 ### Middleware
 
-- Generally, middleware is software that exists between you, as the developer, and the underlying system. By system, we can mean either the operating system, or the under- lying technology, such as we get from Node. More specifically, middleware inserts itself into the communication chain between your application and the underlying system— hence its rather descriptive name.
-- For instance, rather than have to provide all the functionality necessary for serving static files via a web server, you can use middleware to handle most of it. The middleware then takes care of all the tedious bits, so you can focus on those aspects of your appli- cation that are unique to your needs and requirements. 
-- However, middleware doesn’t stop with just serving up static files. Some middleware provides authorization compo- nents, proxies, routers, cookie and session management, and other necessary web technologies.
+- Generally, middleware is software that exists between you, as the developer, and the underlying system. By system, we can mean either the operating system, or the under-lying technology, such as we get from Node. More specifically, middleware inserts itself into the communication chain between your application and the underlying system— hence its rather descriptive name.
+- For instance, rather than have to provide all the functionality necessary for serving static files via a web server, you can use middleware to handle most of it. The middleware then takes care of all the tedious bits, so you can focus on those aspects of your application that are unique to your needs and requirements. 
+- However, middleware doesn’t stop with just serving up static files. Some middleware provides authorization components, proxies, routers, cookie and session management, and other necessary web technologies.
 - #### Connect 
     - You can install Connect using npm:<br>
         <pre>
