@@ -6,6 +6,6 @@
 
 ## Follow me [@abhinavmish96](https://twitter.com/abhinavmish96) on twitter to clarify any doubts or just drop a Hi!!
 
-### Start today! Happy Coding!!
+### Start today! Happy Coding!
 
 ### If you have problems, create an issue on this repo. Thanks! :)
